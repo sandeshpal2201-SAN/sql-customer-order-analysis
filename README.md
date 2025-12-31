@@ -42,3 +42,30 @@ Customers without orders can be targeted for retention campaigns.
 - Customers without orders show NULL values in product and quantity.
 - COALESCE is used to replace NULL values with meaningful defaults.
 
+## Why LEFT JOIN Matters
+
+LEFT JOIN is useful in real business scenarios where:
+- Management wants a complete customer list.
+- Identifying inactive or churn-risk customers.
+- Finding data gaps for follow-up campaigns.
+
+
+
+## Conclusion
+
+This project demonstrates practical usage of SQL JOINs to analyze customer orders.
+It highlights how INNER JOIN and LEFT JOIN behave differently and how NULL values
+can be handled using COALESCE to make data analysis business-friendly.
+
+
+### Sample Output
+
+Customer Name | Product | Quantity
+------------- | ------- | --------
+Amit          | Laptop  | 1
+Riya          | Phone   | 2
+Suresh        | Headphones | 1
+Neha          | No Order | 0
+
+
+
